@@ -1,0 +1,33 @@
+<div class="container mb-5">
+  <app-jumbotron></app-jumbotron>
+
+  <div class="col-md-8 blog-main">
+    <h3 class="pb-3 mb-4 font-italic border-bottom"></h3>
+
+    <div class="blog-post">
+
+      <table class="table table-striped" >
+        <thead >
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Qtd</th>
+            <th scope="col">Requisitos</th>
+            <th scope="col">Candidatar</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let tcObjeto of objTrabalheConosco">
+          <tr>
+            <th scope="row">{{tcObjeto.id}}</th>
+            <td>{{tcObjeto.name}}</td>
+            <td>{{tcObjeto.postId}}</td>
+            <td>{{tcObjeto.body}}</td>
+            <td><a href="#"><i class="fa fa-eye"></i> Acessar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr>
+
+
+  </div>

@@ -1,0 +1,63 @@
+<!-- INÍCIO FALE CONOSCO -->
+<div class="container">
+    <app-jumbotron></app-jumbotron>
+
+    <div class="card mt-5">
+        <h4 class="card-header bg-secondary text-white"><i class="fa fa-comment fa-lg mr-2"></i>Fale conosco</h4>
+        <div class="card-body">
+            <form [formGroup]="faleConoscoForm" novalidate>
+                <div class="row">
+                    <div class="col-md-12">
+                        <mt-input-container errorMessage="Campo obrigatório e com mínimo de 5 caracteres" label="Nome">
+                            <input class="form-control" formControlName="nome" autocomplete="of">
+                        </mt-input-container>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <mt-input-container errorMessage="E-mail inválido" label="E-mail">
+                            <input class="form-control" formControlName="email" autocomplete="of">
+                        </mt-input-container>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <mt-input-container errorMessage="Campo obrigatório" label="Telefone">
+                            <input class="form-control" formControlName="telefone" autocomplete="of" [textMask]="{mask: mask}">
+                        </mt-input-container>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <mt-input-container errorMessage="Campo obrigatório" label="Tipo de Contato">
+                            <select class="form-control" formControlName="tipo_contato">
+                                <option value="Comprar Imóvel">Comprar imóvel</option>
+                                <option value="Comprar Terreno">Comprar terreno</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </mt-input-container>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <mt-input-container errorMessage="Campo obrigatório" label="Mensagem">
+                            <textarea formControlName="mensagem" class="form-control" rows="4"></textarea>
+                        </mt-input-container>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-block" [disabled]="!faleConoscoForm.valid" (click)="enviarEmail(faleConoscoForm.value)">
+                            Enviar <i class="fa fa-paper-plane fa-lg ml-2"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- FIM FALE CONOSCO -->

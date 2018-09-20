@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <app-jumbotron></app-jumbotron>
+
+  <div class="col-md-12 mb-5 mt-5">
+    <ngb-accordion #acc="ngbAccordion" *ngFor="let sacObj of sacObject">
+      <ngb-panel id="toggle-{{sacObj.id}}" title="Dúvida {{sacObj.id}} - {{sacObj.name}}">
+        <ng-template ngbPanelContent>
+          {{sacObj.body}}
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  </div>
+
+
+</div>

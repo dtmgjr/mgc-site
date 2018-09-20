@@ -1,0 +1,6 @@
+.is-valid > .form-control {
+    border: 1px solid green
+}
+.is-invalid > .form-control {
+    border: 1px solid red;
+}

@@ -1,0 +1,14 @@
+.banner{
+    min-width: 200px;
+}
+.cabecalho {
+    min-height: 147px;
+}
+
+.contato {
+    color: #a7a6a6;
+    max-width: 660px;
+    
+    padding: 12px 0 3px 0 !important;
+    display: table-cell;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <app-jumbotron></app-jumbotron>
+
+  <div class="col-md-12 blog-main marketing">
+    <h3 class="pb-3 mb-4 font-italic border-bottom"></h3>
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">Venda seu <strong>terreno</strong></h2>
+
+      <p class="text-justify" *ngFor="let vtObjeto of objVendaTerreno">
+        {{vtObjeto.body}}
+      </p>   
+
+      <button type="button" class="btn btn-outline-primary mt-5" (click)="direcionaParaContato()">
+        <i class="fa fa-arrow-right"></i> TENHO INTERESSE EM VENDER MEU TERRENO
+      </button>
+    </div>
+    <h3 class="pb-3 mb-4 font-italic border-bottom"></h3>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <app-jumbotron></app-jumbotron>
+
+  <div class="col-md-8 blog-main" *ngFor="let qsObjeto of objQuemSomos">
+    <h3 class="pb-3 mb-4 font-italic border-bottom"></h3>
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">NOSSA <strong>VISÃO</strong></h2>
+      <p>{{qsObjeto.body}}</p>     
+    </div>
+    <hr>
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">NOSSA <strong>MISSÃO</strong></h2>
+      <p>{{qsObjeto.body}}</p>     
+    </div>
+    <hr>
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">NOSSOS <strong>VALORES</strong></h2>
+      <p>{{qsObjeto.body}}</p>     
+    </div>
+
+  </div>
+</div>
