@@ -1,48 +1,45 @@
-<div class="container-fluid">
+<div class="container">
   <!-- insere a galeria -->
   <app-gallery></app-gallery>
 
-  <!-- informações do imovel -->
-  <div class="row mt-5">
-    <div class="col-9"></div>
-    <div class="col-4">
-      <figure class="col-sm-3">
-        <img class="rounded bg-dark" src="https://via.placeholder.com/226x228">
-      </figure>
-    </div>
-    <div class="col-6">
-      <div class="row">
-        <div class="col text-justify">
-          <h4 class="row">
-            RESIDENCIAL JARDIM GLÓRIA
-          </h4>
-          Excelente localização no Bairro Glória, entre a Rua Augusto Souza Coutinho
-          e Rua Galba, próximo ao Bairro Alípio de Melo, na divisa do
-          Alvaro Camargos. Um MR Flex 2 Quartos com 2 vagas, Salão
-          de Festas e área externa arborizada. E você ainda pode optar por
-          4 ótimas coberturas ou 4 áreas privativas.
+  <div class="row mb-5 mt-5">
+    <div class="col-md-12">
+      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+        <img class="card-img-right flex-auto d-none d-lg-block"  alt="Thumbnail [200x250]"
+          src="/assets/images/casa.jpg"
+          data-holder-rendered="true" style="width: 300px; height: 250px;">
+        <div class="card-body d-flex flex-column align-items-start">
+          <strong class="d-inline-block mb-2 text-light badge badge-danger"><i class="fa fa-warning"></i> ÚLTIMAS
+            UNIDADES</strong>
+          <h3 class="mb-0">
+            <span class="text-dark">RESIDENCIAL JARDIM GLÓRIA</span>
+          </h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="card-text mb-auto"> Excelente localização no Bairro Glória, entre a Rua Augusto Souza Coutinho
+            e Rua Galba, próximo ao Bairro Alípio de Melo, na divisa do
+            Alvaro Camargos. Um MR Flex 2 Quartos com 2 vagas, Salão
+            de Festas e área externa arborizada. E você ainda pode optar por
+            4 ótimas coberturas ou 4 áreas privativas.</p>
+
+          <a routerLink="/fale-conosco"><i class="fa fa-arrow-right"></i> Clique para consultar preço e condições</a>
+
         </div>
+
       </div>
-      <button type="button" class="btn btn-primary mt-5"><i class="fa fa-headphones fa-2x"></i> PARA PREÇO E CONDIÇÕES
-        CONSULTE-NOS</button>
     </div>
   </div>
 
-  <!-- imagens e fotos -->
-  <div class=" container row mt-5">
-    <div class="mt-5">
-      <app-images-fotos></app-images-fotos>
-    </div>
-    <div class="mt-5">
-      <app-plantas></app-plantas>
-    </div>
-  </div>
 </div>
+
+<div class="container">
+  <app-images-fotos></app-images-fotos>
+</div>
+
 
 <!--
   dados ok
-  imagens 
-  plantas
-  estagio
-  mapa
+  imagens ok
+  plantas ok
+  estagio ok
+  mapa ok
 -->

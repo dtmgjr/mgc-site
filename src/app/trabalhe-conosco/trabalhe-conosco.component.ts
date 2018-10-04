@@ -10,7 +10,7 @@ import { TrabalheConoscoService } from './trabalhe-conosco.service';
 })
 export class TrabalheConoscoComponent implements OnInit {
 
-  objTrabalheConosco: Object;
+  objTrabalheConosco: Object[];
 
   constructor(private data: TrabalheConoscoService) { }
 

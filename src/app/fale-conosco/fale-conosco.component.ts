@@ -14,7 +14,6 @@ export class FaleConoscoComponent implements OnInit {
 
   faleConoscoForm: FormGroup;
 
-
   mask: any[] = ['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
 
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { QuemSomosService } from './quem-somos.service';
 import { Observable } from 'rxjs/Observable';
+import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 
 @Component({
   selector: 'app-quem-somos',
@@ -12,8 +13,7 @@ export class QuemSomosComponent implements OnInit {
 
   objQuemSomos: Object;
 
-  constructor(private data: QuemSomosService) {
-  }
+  constructor(private data: QuemSomosService) { }
 
   ngOnInit() {
     this.data.getInfo().subscribe(
@@ -21,7 +21,10 @@ export class QuemSomosComponent implements OnInit {
         this.objQuemSomos = data;
       }
     );
-
   }
+
+
+
+
 
 }

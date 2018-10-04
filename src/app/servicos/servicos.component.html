@@ -4,93 +4,32 @@
   <div class="col-md-8 blog-main">
     <h3 class="pb-3 mb-4 font-italic border-bottom"></h3>
 
-    <div class="blog-post">
+    <div class="blog-post" *ngFor="let sConstrucao of objConstrucao">
       <h2 class="blog-post-title"><strong>CONSTRUÇÕES</strong></h2>
-
-      <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus,
-        tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-
-      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
-        nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo,
-        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <ul>
-        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-        <li>Donec id elit non mi porta gravida at eget metus.</li>
-        <li>Nulla vitae elit libero, a pharetra augue.</li>
-      </ul>
-
+      <p>{{sConstrucao.body}}</p>
     </div>
-    <hr>
-
-    <div class="blog-post">
-      <h2 class="blog-post-title"><strong>PROJETOS</strong></h2>
-
-      <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
-        lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-      <blockquote>
-        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      </blockquote>
-      <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-        Aenean lacinia bibendum nulla sed consectetur.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
-        vestibulum at eros.</p>
-    </div>
-    <hr>
-
-    <div class="blog-post">
-      <h2 class="blog-post-title"><strong>CONSULTORIA</strong></h2>
-
-      <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
-        lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-      <blockquote>
-        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      </blockquote>
-      <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-        Aenean lacinia bibendum nulla sed consectetur.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
-        vestibulum at eros.</p>
-    </div>
-    <hr>
-
-    <div class="blog-post">
-      <h2 class="blog-post-title"><strong>GERENCIAMENTO</strong></h2>
-
-      <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
-        lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-      <blockquote>
-        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      </blockquote>
-      <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-        Aenean lacinia bibendum nulla sed consectetur.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
-        vestibulum at eros.</p>
-    </div>
-    <hr>
     
-    <div class="blog-post">
-      <h2 class="blog-post-title"><strong>INCORPORAÇÕES</strong></h2>
+    <div class="blog-post" *ngFor="let sProjeto of objProjeto">
+      <h2 class="blog-post-title"><strong>PROJETOS</strong></h2>
+      <p>{{sProjeto.body}}</p>
+    </div>
+    
+    <hr>
+    <div class="blog-post" *ngFor="let sConsultoria of objConsultoria">
+      <h2 class="blog-post-title"><strong>CONSULTORIA</strong></h2>
+      <p>{{sConsultoria.body}}</p>
+    </div>
+    
+    <hr>
+    <div class="blog-post" *ngFor="let sGerenciamento of objGerenciamento">
+      <h2 class="blog-post-title"><strong>GERENCIAMENTO</strong></h2>
+      <p>{{sGerenciamento.body}}</p>
+    </div> 
 
-      <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
-        lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-      <blockquote>
-        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      </blockquote>
-      <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-        Aenean lacinia bibendum nulla sed consectetur.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
-        vestibulum at eros.</p>
+    <hr>
+    <div class="blog-post" *ngFor="let sIncorporacao of objIncorporacao"> 
+      <h2 class="blog-post-title"><strong>INCORPORAÇÕES</strong></h2>
+      <p>{{sIncorporacao.body}}</p>
     </div>
   </div>
 </div>

@@ -40,13 +40,6 @@ export class SlidesService {
         description: '',
         imagePath: '/assets/images/banner-3.png',
         imageAlt: ''
-      },
-      {
-        id: 'slide-5',
-        title: 'Obras',
-        description: '',
-        imagePath: '/assets/images/2000x500.png',
-        imageAlt: ''
       }
     ]);
   }

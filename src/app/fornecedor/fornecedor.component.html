@@ -7,33 +7,7 @@
     <div class="blog-post">
       <h2 class="blog-post-title">Seja um <strong>fornecedor</strong></h2>
 
-      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae imperdiet nibh,
-        ut vulputate odio.
-        Suspendisse et neque fermentum, ultricies felis ac, semper est. Nulla vulputate fringilla nisl ac ullamcorper.
-        Sed fermentum rutrum quam sit amet mollis. Nunc porttitor leo tortor, id tempus elit eleifend sed. Pellentesque
-        euismod semper lorem condimentum tincidunt. Proin sit amet tortor id quam porta iaculis eget eget lectus.
-        Nullam gravida consequat lectus, nec ultricies mi semper a. Sed vel felis in purus consectetur venenatis. Donec
-        consectetur in lectus at ullamcorper. Suspendisse volutpat mattis suscipit. Integer nibh lacus, dignissim ut
-        urna id, gravida fermentum mi. Pellentesque lacus augue, venenatis at sollicitudin sagittis, iaculis at neque.</p>
-
-      <p class="text-justify">Donec tincidunt ante sed est feugiat malesuada. Pellentesque interdum tempus nibh, vel
-        volutpat dolor
-        sollicitudin porttitor. Nullam lectus magna, dapibus a est a, vehicula rutrum sapien. Aenean justo ex, eleifend
-        a gravida vitae, mattis malesuada justo. Etiam nisl orci, aliquam id ante quis, commodo ultricies arcu. Ut at
-        sem vitae ex blandit egestas. Nullam at risus vel nibh aliquam bibendum. Vestibulum id ligula erat. Nulla
-        rutrum arcu luctus pharetra lacinia. In a mollis libero. Sed facilisis tempus nulla, nec tincidunt odio
-        ultrices efficitur.</p>
-
-      <p class="text-justify">Donec porttitor ante et nibh mattis pretium. Morbi tristique mi libero, eu dictum ex
-        interdum at. Phasellus
-        rhoncus metus felis, non vehicula sem sodales in. Etiam venenatis cursus odio vel elementum. Pellentesque
-        lobortis dictum porttitor. Curabitur fermentum ut orci vel finibus. Etiam sed metus at arcu rhoncus varius
-        accumsan vehicula arcu. Proin ac suscipit odio, vitae rhoncus nisi. Donec congue ex nec ultrices placerat.
-        Pellentesque non augue non urna sagittis lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et
-        ultrices posuere cubilia Curae; Donec a sapien sed augue vehicula mattis ut vel augue. Vivamus facilisis,
-        tortor id ullamcorper malesuada, turpis arcu malesuada lectus, nec facilisis leo leo a ipsum. Integer elit
-        tortor, maximus a lobortis eu, mattis eu nulla.
-      </p>
+      <p class="text-justify" *ngFor="let sFornecedor of objFornecedor">{{sFornecedor.body}}</p>
 
       <button type="button" class="btn btn-outline-primary mt-5" (click)="direcionaParaContato()">
         <i class="fa fa-arrow-right"></i> TENHO INTERESSE EM TORNAR UM FORNECEDOR

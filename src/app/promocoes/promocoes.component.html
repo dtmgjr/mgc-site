@@ -1,3 +1,19 @@
 <div class="container">
-    promocoes works!
+    <app-gallery></app-gallery>
+    <div class="container mt-4">
+
+        <h2 class="blog-post-title"><strong>Promoções</strong></h2>
+
+        <div class="row mt-4">
+            <div class="col-auto mb-3" *ngFor="let hcConteudo of objContent">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{hcConteudo.url}}" width="210" height="212" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a routerLink="/empreendimento/{{hcConteudo.id}}">{{hcConteudo.title}}</a></h6>
+                        <p class="card-text">{{hcConteudo.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -9,7 +9,7 @@ export class TrabalheConoscoService {
   constructor(private http: Http) { }
 
   getTrabalheConosco(): Observable<any> {
-    return this.http.get('https://jsonplaceholder.typicode.com/comments')
+    return this.http.get('https://jsonplaceholder.typicode.com/comments?postId=1')
       .map(res => res.json());
   }
 

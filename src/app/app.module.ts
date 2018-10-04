@@ -42,6 +42,7 @@ import { MapaComponent } from './empreendimento/mapa/mapa.component';
 import { EstagioComponent } from './empreendimento/estagio/estagio.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ModalComponent } from './empreendimento/modal/modal.component';
+import { GalleryEmpreendimentoComponent } from './empreendimento/gallery-empreendimento/gallery-empreendimento.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { ModalComponent } from './empreendimento/modal/modal.component';
     PlantasComponent,
     MapaComponent,
     EstagioComponent,
-    ModalComponent
+    ModalComponent,
+    GalleryEmpreendimentoComponent
 
   ],
 

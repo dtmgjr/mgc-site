@@ -1,1 +1,7 @@
-<app-slide  [slides]="slides"></app-slide>  
+<div *ngIf="slides">
+    <app-slide [slides]="slides"></app-slide>
+</div>
+
+<div *ngIf="images">
+    <app-slide [images]="images"></app-slide>
+</div>
